@@ -6,7 +6,6 @@ public class App {
     }
 
     int plus(int a, int b) {
-        if (a == 10 && b == 20) return 30;
-        return 3;
+        return a + b;
     }
 }
