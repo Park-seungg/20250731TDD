@@ -31,10 +31,15 @@ public class Rq {
 
     public int getParamAsInt(String name, int defaultValue) {
         String value = getParam(name, "");
+
         if (value.isBlank()) {
             return defaultValue;
         }
 
-        return Integer.parseInt(value);
+        try {
+            return Integer.parseInt(value);
+        } catch (NumberFormatException e) {
+            return defaultValue;
+        }
     }
 }
