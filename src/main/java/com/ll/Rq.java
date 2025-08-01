@@ -10,4 +10,7 @@ public class Rq {
         String[] cmdBits = cmd.split("\\?");
         return cmdBits[0];
     }
+
+    public String getParam(String paramname, String defaultValue) {
+    }
 }
